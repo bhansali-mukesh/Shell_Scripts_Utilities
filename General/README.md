@@ -1,110 +1,111 @@
 Author : BHANSALI MUKESH KUMAR
 
-These Scripts Provides us General Aliases, Functions and Utilities to Help us in Routine Activities on Command Line
+## Shell_Scripts_Utilities
+Provides Lot of Customization, Flexibility, Function, Alises, Utilities etc for Shell Command Line 
 
-Custom : 
-# Open Custom File for Utilities and Aliases
+#### Custom : 
+Open Custom File for Utilities and Aliases
 
-Hammer : 
-# Go to Jack Hammer Repository
+#### Hammer : 
+Go to Jack Hammer Repository
 
-Gecko : 
-# Go to Gecko Search Repository
+#### Gecko : 
+Go to Gecko Search Repository
 
-Console : 
-# Go to Console Repository
+#### Console : 
+Go to Console Repository
 
-Image : 
-# Go to Image Repository
+#### Image : 
+Go to Image Repository
 
-Maven : 
-# Open Aliases File for Maven Commands
+#### Maven : 
+Open Aliases File for Maven Commands
 
-install : 
-# Maven install Command, Skipping Tests
+#### install : 
+Maven install Command, Skipping Tests
 
-MVN : 
-# Maven install command with Tests
+#### MVN : 
+Maven install command with Tests
 
-Native : 
-# Open Aliases File for Native Commands
+#### Native : 
+Open Aliases File for Native Commands
 
-SED_i : 
-# Equals to `sed -i` in bash shell
-#
-# Find and Replace in Files
-# Example
-#		sed -i -- s/india/Bharat/g Countries.txt
+#### SED_i : 
+Equals to `sed -i` in bash shell
 
-a : 
-# Alias to `alias` command
+Find and Replace in Files
+Example
+		sed -i -- s/india/Bharat/g Countries.txt
 
-c : 
-# Clear Screen
+#### a : 
+Alias to `alias` command
 
-grep : 
-# Grep with Visible Color
+#### c : 
+Clear Screen
 
-vi : 
-# Use vim instead of vi
+#### grep : 
+Grep with Visible Color
 
-Back : 
-# Going Back to the Previous Directory, Silently ( Useful in Scripting Where User Need Not to Know About Changing Directories )
+#### vi : 
+Use vim instead of vi
 
-PROFILE : 
-# Open Custom Profiler
+#### Back : 
+Going Back to the Previous Directory, Silently ( Useful in Scripting Where User Need Not to Know About Changing Directories )
 
-Profile : 
-# Just type "Profile" on Terminal
-# If Profile is Followed By Some Special Command then it will Show Help for that Command
-# Else Displaying Help with Pagination ( Press Enter or Space to Scroll, "q" to Quite )
-# If you Add, Update and Command in this Utility with Proper Comment, it will Automatically Be Visible in Profile as well.
-# Example
-# 1. Profile
-# 2. Profile grep
+#### PROFILE : 
+Open Custom Profiler
 
-Profile_Document : 
-# Utility Function which Parses this File and Generates The Kuber Documents to Help,
-# The Command "Profile" Generating Help Document from the Source on Runtime
+#### Profile : 
+ Just type "Profile" on Terminal
+ If Profile is Followed By Some Special Command then it will Show Help for that Command
+ Else Displaying Help with Pagination ( Press Enter or Space to Scroll, "q" to Quite )
+ If you Add, Update and Command in this Utility with Proper Comment, it will Automatically Be Visible in Profile as well.
+ Example
+   1. Profile
+   2. Profile grep
 
-Yarn : 
-# Open Myself
+#### Profile_Document : 
+ Utility Function which Parses this File and Generates The Kuber Documents to Help,
+ The Command "Profile" Generating Help Document from the Source on Runtime
 
-cache : 
-# Cleaning yarn cache
+#### Yarn : 
+ Open Myself
 
-clean : 
-# Yarn Clean
+#### cache : 
+ Cleaning yarn cache
 
-YARN : 
-# Yarn With Cleaning and Clearing Cache
+#### clean : 
+ Yarn Clean
 
-lint : 
-# Yarn Lint Fix
+#### YARN : 
+ Yarn With Cleaning and Clearing Cache
 
-build : 
-# Yarn Build
+#### lint : 
+ Yarn Lint Fix
 
-start : 
-# Yarn Start
+#### build : 
+ Yarn Build
 
-Build : 
-# Yarn Fix Lint and  Build
+#### start : 
+ Yarn Start
 
-Start : 
-# Yarn Finx Lint, Build and Start
+#### Build : 
+ Yarn Fix Lint and  Build
 
-Test_File : 
-# Yarn Test a File
+#### Start : 
+ Yarn Finx Lint, Build and Start
 
-Test : 
-# Yarn Fix Lint and Test all
+#### Test_File : 
+ Yarn Test a File
 
-Local : 
-# Yarn Build Local Client
+#### Test : 
+ Yarn Fix Lint and Test all
 
-linter : 
-# If it works, it means you have eslint installed in the project but not globally.
+#### Local : 
+ Yarn Build Local Client
 
-run : 
-# Get All Yarn Command in Your Project
+#### linter : 
+ If it works, it means you have eslint installed in the project but not globally.
+
+#### run : 
+ Get All Yarn Command in Your Project

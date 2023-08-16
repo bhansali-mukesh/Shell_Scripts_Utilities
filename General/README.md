@@ -1,6 +1,6 @@
 Author : BHANSALI MUKESH KUMAR
 
-## Shell_Scripts_Utilities
+## Shell General Customization
 Provides Lot of Customization, Flexibility, Function, Alises, Utilities etc for Shell Command Line 
 
 #### Custom : 

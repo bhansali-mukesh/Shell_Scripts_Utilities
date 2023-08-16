@@ -1,110 +1,111 @@
 Author : BHANSALI MUKESH KUMAR
 
-These Scripts Provides us General Aliases, Functions and Utilities to Help us in Routine Activities on Command Line
+## Shell_Scripts_Utilities
+Provides Lot of Customization, Flexibility, Function, Alises, Utilities etc for Shell Command Line 
 
 Custom : 
-# Open Custom File for Utilities and Aliases
+Open Custom File for Utilities and Aliases
 
 Hammer : 
-# Go to Jack Hammer Repository
+Go to Jack Hammer Repository
 
 Gecko : 
-# Go to Gecko Search Repository
+Go to Gecko Search Repository
 
 Console : 
-# Go to Console Repository
+Go to Console Repository
 
 Image : 
-# Go to Image Repository
+Go to Image Repository
 
 Maven : 
-# Open Aliases File for Maven Commands
+Open Aliases File for Maven Commands
 
 install : 
-# Maven install Command, Skipping Tests
+Maven install Command, Skipping Tests
 
 MVN : 
-# Maven install command with Tests
+Maven install command with Tests
 
 Native : 
-# Open Aliases File for Native Commands
+Open Aliases File for Native Commands
 
 SED_i : 
-# Equals to `sed -i` in bash shell
-#
-# Find and Replace in Files
-# Example
-#		sed -i -- s/india/Bharat/g Countries.txt
+Equals to `sed -i` in bash shell
+
+Find and Replace in Files
+Example
+		sed -i -- s/india/Bharat/g Countries.txt
 
 a : 
-# Alias to `alias` command
+Alias to `alias` command
 
 c : 
-# Clear Screen
+Clear Screen
 
 grep : 
-# Grep with Visible Color
+Grep with Visible Color
 
 vi : 
-# Use vim instead of vi
+Use vim instead of vi
 
 Back : 
-# Going Back to the Previous Directory, Silently ( Useful in Scripting Where User Need Not to Know About Changing Directories )
+Going Back to the Previous Directory, Silently ( Useful in Scripting Where User Need Not to Know About Changing Directories )
 
 PROFILE : 
-# Open Custom Profiler
+Open Custom Profiler
 
 Profile : 
-# Just type "Profile" on Terminal
-# If Profile is Followed By Some Special Command then it will Show Help for that Command
-# Else Displaying Help with Pagination ( Press Enter or Space to Scroll, "q" to Quite )
-# If you Add, Update and Command in this Utility with Proper Comment, it will Automatically Be Visible in Profile as well.
-# Example
-# 1. Profile
-# 2. Profile grep
+ Just type "Profile" on Terminal
+ If Profile is Followed By Some Special Command then it will Show Help for that Command
+ Else Displaying Help with Pagination ( Press Enter or Space to Scroll, "q" to Quite )
+ If you Add, Update and Command in this Utility with Proper Comment, it will Automatically Be Visible in Profile as well.
+ Example
+   1. Profile
+   2. Profile grep
 
 Profile_Document : 
-# Utility Function which Parses this File and Generates The Kuber Documents to Help,
-# The Command "Profile" Generating Help Document from the Source on Runtime
+ Utility Function which Parses this File and Generates The Kuber Documents to Help,
+ The Command "Profile" Generating Help Document from the Source on Runtime
 
 Yarn : 
-# Open Myself
+ Open Myself
 
 cache : 
-# Cleaning yarn cache
+ Cleaning yarn cache
 
 clean : 
-# Yarn Clean
+ Yarn Clean
 
 YARN : 
-# Yarn With Cleaning and Clearing Cache
+ Yarn With Cleaning and Clearing Cache
 
 lint : 
-# Yarn Lint Fix
+ Yarn Lint Fix
 
 build : 
-# Yarn Build
+ Yarn Build
 
 start : 
-# Yarn Start
+ Yarn Start
 
 Build : 
-# Yarn Fix Lint and  Build
+ Yarn Fix Lint and  Build
 
 Start : 
-# Yarn Finx Lint, Build and Start
+ Yarn Finx Lint, Build and Start
 
 Test_File : 
-# Yarn Test a File
+ Yarn Test a File
 
 Test : 
-# Yarn Fix Lint and Test all
+ Yarn Fix Lint and Test all
 
 Local : 
-# Yarn Build Local Client
+ Yarn Build Local Client
 
 linter : 
-# If it works, it means you have eslint installed in the project but not globally.
+ If it works, it means you have eslint installed in the project but not globally.
 
 run : 
-# Get All Yarn Command in Your Project
+ Get All Yarn Command in Your Project

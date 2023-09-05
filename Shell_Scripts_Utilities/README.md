@@ -1,8 +1,8 @@
 
-# Author : BHANSALI MUKESH KUMAR
+### Author : BHANSALI MUKESH KUMAR
 
-# http://shukriya-janaab.blogspot.com/
-# https://github.com/bhansali-mukesh/
+### http://shukriya-janaab.blogspot.com/
+### https://github.com/bhansali-mukesh/
 
 This Package Provides Shell Utilities for Many Purpose.
 We tried to Make them Generic and Moduler.

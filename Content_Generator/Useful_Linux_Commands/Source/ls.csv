@@ -1,0 +1,11 @@
+#Command,#Description,#Syntax,#Example,#Help
+ls#linkhttps://www.rapidtables.com/code/linux/ls.html,List Files and Directory,ls [OPTION]... [FILE]... , ls, man ls 
+
+#Options,#Description,#Examples
+-A; --almost-all, List all files including hidden.; Bu Do not list implied . and .. , ls -A; ls -A /tmp; ls -A ~; ls -A *log*  
+-l, Use a long listing format, ls -l; ls -l ~; ls -l /tmp
+-h; --human-readable, With -l; print sizes in human readable format; (e.g. 1K 234M 2G), ls -lh; ls -lh /tmp; ls -lh /tmp/*log
+-r; --reverse, Reverse order while sorting, ls -r; ls -lr /tmp
+-R; --recursive, List subdirectories recursively, ls -R; ls -alR $HOME; ls -Rh /tmp
+-t, Sort by modification time (newest first), ls -lt; ls -ltr; ls -tr /tmp
+-1, List one file per line, ls -1; ls -1 logs; ls -a1 $HOME

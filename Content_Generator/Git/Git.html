@@ -1,0 +1,51 @@
+<html><head><title>  Git in Practice  </title></head><body>
+<font size="+3"> Git in Practice </font> </br><hr>
+<table border="2" bordercolor="#1298A3">
+<tr>
+<th> Topic </th>
+<th> Brief </th>
+</tr>
+<tr>
+<td> <a href=https://www.atlassian.com/git/tutorials/what-is-git> Git </a> </td>
+<td>  Git is a Distributed Version Control System.</br> It Tracks Changes and Not Versions ( using SHA-1 ).</br> Different Users mantain Different Repositories.</br> Doesn't Depend on Central/Master Repositories</br> </td>
+</tr>
+<tr>
+<td> <a href=https://git-scm.com/book/en/v2/Getting-Started-A-Short-History-of-Git> History </a> </td>
+<td>  Developed By Linux Development Community (and in particular Linus Torvalds, the creator of Linux)</br> This is one of the Reason Why many of git commands aligned to Linux like : git rm, git mv etc. </td>
+</tr>
+<tr>
+<td> <a href=http://www.darwinbiler.com/understanding-the-3-tree-architecture-of-git/> The 3 Trees </a> </td>
+<td> <img src="https://www.darwinbiler.com/assets/3-tree.jpeg"> </img></br> 3 Tree Implementation:</br> 1. Working Copy</br> 2. Staged Changes</br> 3. Repository " </td>
+</tr>
+<tr>
+<td> <a href=https://ihatetomatoes.net/git-config-tutorial/> Configuration </a> </td>
+<td>  3 Levels</br> 1. System : All Users and All Repositories</br> 2. Global : Current User, All Repositories</br> 3. Specific Repository</br> Set User Name, Email, Editor etc. </td>
+</tr>
+<tr>
+<td> <a href=https://stackoverflow.com/questions/29217859/what-is-the-git-folder> .git Directory </a> </td>
+<td>  Almost Everything git needs to manage repository</br> See .git/logs, .git/refs, .git/hooks, .git/HEAD </td>
+</tr>
+<tr>
+<td> <a href=https://stackoverflow.com/questions/12399002/how-to-configure-git-bash-command-line-completion> Auto Completion </a> </td>
+<td>  Automatically Completes git command on pressing TAB like linux native commands</br> sudo yum install git-core bash-completion</br> source /etc/bash_completion.d/git </td>
+</tr>
+<tr>
+<td> <a href=https://www.toolsqa.com/git/git-help/> Git Help </a> </td>
+<td>  git help</br> git help [command_name] </td>
+</tr>
+<tr>
+<td> <a href=https://git-scm.com/docs> Useful Commands </a> </td>
+<td>  1. git init : initialize an existing directory as a Git repository</br> 2. git status : Show the working tree status</br> 3. git diff ( --color-words, Highlight Changed Words in Color ) : Show changes between commits, commit and working tree etc</br> 4. git add : Add files to Staging</br> 5. git commit/amend : Record changes to the repository ( --amend, modify the most recent commit )</br> 6. git log : Show commit logs/history</br> 7. git branch : List(default, if no argument passed), create(default, if branchname is passed), or delete(-D) branches</br> 8. git checkout : Switch branches(-b, Will create and checkout) or restore working tree files, Syncs to Staged or Repository, If Any</br> 9. git stash/apply : Save modified and staged changes (apply, Apply stashed Changes Back)</br> 10. git reset : --soft(UnCommit), --mixed(Default,UnAdd), --hard(Reset HEAD to Point Older Commit, DANGEROUS)</br> 11. git rebase : Re-apply commits on top of another base tip</br> 12. git pull : fetch and merge any commits from the tracking remote branch</br> 13. git cherry-pick : Apply the changes introduced by some existing commits</br> 14. git revert : Revert some existing commits(Created new Inverted Commits)</br> 15. git tag : Create, list(-l, --list), delete or verify a tag object signed with GPG</br> 16. git help : Display help information about Git ( git help [COMMAND], for a Specific Command)</br> </td>
+</tr>
+<tr>
+<td> <a href=https://stackoverflow.com/questions/292357/what-is-the-difference-between-git-pull-and-git-fetch> git fetch, git merge and git pull </a> </td>
+<td>  git fetch Brings Remote Changes to Local Repository but doesn't update working copy hence always harmless</br> Doesn't Cause git conflict Anytime</br> Used to Compare Changes without actually merging and for offline update later by git merge</br> git merge Applies fetched Changes to Branch/Working Copy in Local</br> git pull = git fetch + git merge</br> See In Context of .git Directory</br> git fetch : .git/refs/remotes/</br> git merge : .git/refs/heads </td>
+</tr>
+<tr>
+<td> <a href=https://www.pixelstech.net/article/1549115148-git-reset-vs-git-revert> git reset and git revert </a> </td>
+<td>  git reset --hard will reset HEAD to Older commits, DISCARDS commits hence result into LOSS of some COMMITS</br> While git revert will create a NEW INVERTED COMMIT to Neutralize the affect of Older Commits</br> </td>
+</tr>
+</table>
+<hr align="left" width="87%"></br>
+<pre> Good Bye :) </pre>
+<hr></body></html>

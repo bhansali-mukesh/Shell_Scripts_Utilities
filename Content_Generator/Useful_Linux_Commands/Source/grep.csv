@@ -1,0 +1,9 @@
+#Command,#Description,#Syntax,#Example,#Help
+grep#linkhttps://www.tutorialspoint.com/unix_commands/grep.htm, Print lines matching a pattern, grep [OPTIONS] PATTERN [FILE...]; grep [OPTIONS] [-e PATTERN | -f FILE] [FILE...], grep Bhansali name.csv, man grep
+
+#Options,#Description,#Examples
+-i; --ignore-case, Case in sensitive Search, grep -i cLASs /tmp/Main.java
+-v; --invert-match, Searches for non-matching lines, grep -v println /tmp/Main.java
+-n; --line-number, Add line number for matching lines, grep -n println /tmp/Main.java
+-r; --recursive, Search Recursively, grep -r println /tmp/Project/bargad
+-F, Search for Plain Text; Don't understand search string as regular expression, grep -F log.er /tmp/Main.java 

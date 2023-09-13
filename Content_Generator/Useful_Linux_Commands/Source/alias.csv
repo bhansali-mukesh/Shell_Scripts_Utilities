@@ -1,0 +1,2 @@
+#Command,#Description,#Syntax,#Example,#Help
+alias#linkhttps://www.tutorialspoint.com/unix_commands/alias.htm, It is very Handy Command; Normally Used for shorten things; Works as Macro or a Constant Variable, alias [-p] [name[=value] ...], alias grep='grep --color=auto', man alias

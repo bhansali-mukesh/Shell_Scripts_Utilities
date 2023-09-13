@@ -1,0 +1,9 @@
+#Command,#Description,#Syntax,#Example,#Help
+cp#linkhttps://www.rapidtables.com/code/linux/cp.html, Copy files and Directories, cp [OPTION]... SOURCE... DESTINATION, cp INDIA.cpp Coutries/, man cp 
+
+#Options,#Description,#Examples
+--attributes-only, Don't copy the file data; Copy attributes/metadata only, cp --attributes-only originalFile attributeFileWithNoData
+-p, Preserves Metadata like : mode | ownership | timestamps, cp -p file1 file2
+--parents, Use full source file name under DIRECTORY, cp --parent /etc/hosts /tmp; output file :; /tmp/etc/hosts
+-R; -r; --recursive, copy directories recursively, cp -r Learning/ /tmp; cp -pr /tmp $HOME
+-u; --update, copy only when the SOURCE file is newer than the destination file; Or when the destination file is missing, cp -u file1 file2

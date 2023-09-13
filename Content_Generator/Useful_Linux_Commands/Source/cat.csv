@@ -1,0 +1,6 @@
+#Command,#Description,#Syntax,#Example,#Help
+cat#linkhttps://www.rapidtables.com/code/linux/cat.html, Concatenate files and print on the standard output; Also used to view file, cat [OPTION]... [FILE]... , cat $HOME/.bashrc, man cat
+
+#Options,#Description,#Examples
+-n; --number, Add numbers  to all output lines, cat -n Basic* ; cat -n server*log
+-A; --show-all,Shows All including Tab and Line End Characters; equivalent to -vET, cat -A HTML*; cat -A $HOME/.bashrc

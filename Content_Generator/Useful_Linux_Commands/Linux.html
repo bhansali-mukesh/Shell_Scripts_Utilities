@@ -1,0 +1,379 @@
+<html><head><title>  Linux Command Line  </title></head><body>
+<font size="+3"> Commanding Linux </font> </br><hr>
+<table border="2" bordercolor="#1298A3">
+<tr>
+<th> Command </th>
+<th> Description </th>
+<th> Syntax </th>
+<th> Example </th>
+<th> Help </th>
+</tr>
+<tr>
+<td> <a href=https://www.tutorialspoint.com/unix_commands/alias.htm> alias </a> </td>
+<td>  It is very Handy Command</br> Normally Used for shorten things</br> Works as Macro or a Constant Variable </td>
+<td>  alias [-p] [name[=value] ...] </td>
+<td>  alias grep='grep --color=auto' </td>
+<td>  man alias </td>
+</tr>
+</table>
+<hr align="left" width="87%"></br>
+<table border="2" bordercolor="#1298A3">
+<tr>
+<th> Command </th>
+<th> Description </th>
+<th> Syntax </th>
+<th> Example </th>
+<th> Help </th>
+</tr>
+<tr>
+<td> <a href=https://www.rapidtables.com/code/linux/cat.html> cat </a> </td>
+<td>  Concatenate files and print on the standard output</br> Also used to view file </td>
+<td>  cat [OPTION]... [FILE]...  </td>
+<td>  cat $HOME/.bashrc </td>
+<td>  man cat </td>
+</tr>
+</table> </br> <table border="2" bordercolor="#1298A3">
+<tr>
+<th> Options </th>
+<th> Description </th>
+<th> Examples </th>
+</tr>
+<tr>
+<td> -n</br> --number </td>
+<td>  Add numbers to all output lines </td>
+<td>  cat -n Basic* </br> cat -n server*log </td>
+</tr>
+<tr>
+<td> -A</br> --show-all </td>
+<td> Shows All including Tab and Line End Characters</br> equivalent to -vET </td>
+<td>  cat -A HTML*</br> cat -A $HOME/.bashrc </td>
+</tr>
+</table>
+<hr align="left" width="87%"></br>
+<table border="2" bordercolor="#1298A3">
+<tr>
+<th> Command </th>
+<th> Description </th>
+<th> Syntax </th>
+<th> Example </th>
+<th> Help </th>
+</tr>
+<tr>
+<td> <a href=https://www.tutorialspoint.com/unix_commands/chmod.htm> chmod </a> </td>
+<td>  Change file Permissions</br> i. e. Read(4), Write(2), Execute(1)</br> For User Group and Other</br> It is Either</br> An English Letter Or Octal Number</br> For Specific Permission</br>  </td>
+<td>  chmod [OPTION]... MODE[^MODE]... FILE... </br> chmod [OPTION]... OCTAL-MODE FILE... </br> chmod [OPTION]... --reference=RFILE FILE...  </td>
+<td>  chmod 777 public.txt</br> chmod +x myscript.sh </td>
+<td>  man chmod </td>
+</tr>
+</table> </br> <table border="2" bordercolor="#1298A3">
+<tr>
+<td> Options </td>
+<th> Description </th>
+<th> Examples </th>
+</tr>
+<tr>
+<td> -R</br> --recursive </td>
+<td>  Change Permission for files and directories recursively </td>
+<td>  chmod +x -R Scripts/ </br> chmod 744 -R logs </td>
+</tr>
+</table> </br> <table border="2" bordercolor="#1298A3">
+</table> </br> <table border="2" bordercolor="#1298A3">
+</table>
+<hr align="left" width="87%"></br>
+<table border="2" bordercolor="#1298A3">
+<tr>
+<th> Command </th>
+<th> Description </th>
+<th> Syntax </th>
+<th> Example </th>
+<th> Help </th>
+</tr>
+<tr>
+<td> <a href=https://www.rapidtables.com/code/linux/cp.html> cp </a> </td>
+<td>  Copy files and Directories </td>
+<td>  cp [OPTION]... SOURCE... DESTINATION </td>
+<td>  cp INDIA.cpp Coutries/ </td>
+<td>  man cp </td>
+</tr>
+</table> </br> <table border="2" bordercolor="#1298A3">
+<tr>
+<th> Options </th>
+<th> Description </th>
+<th> Examples </th>
+</tr>
+<tr>
+<td> --attributes-only </td>
+<td>  Don't copy the file data</br> Copy attributes/metadata only </td>
+<td>  cp --attributes-only originalFile attributeFileWithNoData </td>
+</tr>
+<tr>
+<td> -p </td>
+<td>  Preserves Metadata like : mode | ownership | timestamps </td>
+<td>  cp -p file1 file2 </td>
+</tr>
+<tr>
+<td> --parents </td>
+<td>  Use full source file name under DIRECTORY </td>
+<td>  cp --parent /etc/hosts /tmp</br> output file :</br> /tmp/etc/hosts </td>
+</tr>
+<tr>
+<td> -R</br> -r</br> --recursive </td>
+<td>  copy directories recursively </td>
+<td>  cp -r Learning/ /tmp</br> cp -pr /tmp $HOME </td>
+</tr>
+<tr>
+<td> -u</br> --update </td>
+<td>  copy only when the SOURCE file is newer than the destination file</br> Or when the destination file is missing </td>
+<td>  cp -u file1 file2 </td>
+</tr>
+</table>
+<hr align="left" width="87%"></br>
+<table border="2" bordercolor="#1298A3">
+<tr>
+<th> Command </th>
+<th> Description </th>
+<th> Syntax </th>
+<th> Example </th>
+<th> Help </th>
+</tr>
+<tr>
+<td> <a href=https://www.tutorialspoint.com/unix_commands/echo.htm> echo </a> </td>
+<td>  Displays text </td>
+<td>  echo [SHORT-OPTION]... [STRING]...</br> echo LONG-OPTION </td>
+<td>  echo GNU means "Gnu is Not Unix" </td>
+<td>  man echo </td>
+</tr>
+</table> </br> <table border="2" bordercolor="#1298A3">
+<tr>
+<th> Options </th>
+<th> Description </th>
+<th> Examples </th>
+</tr>
+<tr>
+<td> -n </td>
+<td>  Do not output the trailing newline </td>
+<td>  echo a</br> echo b</br> output :</br> a</br> b</br> echo -n a</br> echo b</br> output : ab </td>
+</tr>
+<tr>
+<td> -e </td>
+<td>  Enable interpretation of backslash escapes sequence </td>
+<td>  echo "Name \t Bhansali"</br> output :</br> Name t Bhansali</br> echo -e "Name t Bhansali</br> output :</br> Name Bhansali</br> (t is Tab)" </td>
+</tr>
+</table>
+<hr align="left" width="87%"></br>
+<table border="2" bordercolor="#1298A3">
+<tr>
+<th> Command </th>
+<th> Description </th>
+<th> Syntax </th>
+<th> Example </th>
+<th> Help </th>
+</tr>
+<tr>
+<td> <a href=https://www.tutorialspoint.com/unix_commands/find.htm> find </a> </td>
+<td>  Search for files in a directory hierarchy </td>
+<td>  find [-H] [-L] [-P] [-D debugopts] [-Olevel] [path...] [expression] </td>
+<td>  find /tmp -name names.txt </td>
+<td>  man find </td>
+</tr>
+</table> </br> <table border="2" bordercolor="#1298A3">
+<tr>
+<th> Options </th>
+<th> Description </th>
+<th> Examples </th>
+</tr>
+<tr>
+<td> -name </td>
+<td>  Finds all files matching following pattern in their name </td>
+<td>  find /tmp/logs -name server_*log </td>
+</tr>
+</table>
+<hr align="left" width="87%"></br>
+<table border="2" bordercolor="#1298A3">
+<tr>
+<th> Command </th>
+<th> Description </th>
+<th> Syntax </th>
+<th> Example </th>
+<th> Help </th>
+</tr>
+<tr>
+<td> <a href=https://www.tutorialspoint.com/unix_commands/grep.htm> grep </a> </td>
+<td>  Print lines matching a pattern </td>
+<td>  grep [OPTIONS] PATTERN [FILE...]</br> grep [OPTIONS] [-e PATTERN | -f FILE] [FILE...] </td>
+<td>  grep Bhansali name.csv </td>
+<td>  man grep </td>
+</tr>
+</table> </br> <table border="2" bordercolor="#1298A3">
+<tr>
+<th> Options </th>
+<th> Description </th>
+<th> Examples </th>
+</tr>
+<tr>
+<td> -i</br> --ignore-case </td>
+<td>  Case in sensitive Search </td>
+<td>  grep -i cLASs /tmp/Main.java </td>
+</tr>
+<tr>
+<td> -v</br> --invert-match </td>
+<td>  Searches for non-matching lines </td>
+<td>  grep -v println /tmp/Main.java </td>
+</tr>
+<tr>
+<td> -n</br> --line-number </td>
+<td>  Add line number for matching lines </td>
+<td>  grep -n println /tmp/Main.java </td>
+</tr>
+<tr>
+<td> -r</br> --recursive </td>
+<td>  Search Recursively </td>
+<td>  grep -r println /tmp/Project/bargad </td>
+</tr>
+<tr>
+<td> -F </td>
+<td>  Search for Plain Text</br> Don't understand search string as regular expression </td>
+<td>  grep -F log.er /tmp/Main.java </td>
+</tr>
+</table>
+<hr align="left" width="87%"></br>
+<table border="2" bordercolor="#1298A3">
+<tr>
+<th> Command </th>
+<th> Description </th>
+<th> Syntax </th>
+<th> Example </th>
+<th> Help </th>
+</tr>
+<tr>
+<td> <a href=https://www.rapidtables.com/code/linux/ls.html> ls </a> </td>
+<td> List Files and Directory </td>
+<td> ls [OPTION]... [FILE]...  </td>
+<td>  ls </td>
+<td>  man ls </td>
+</tr>
+</table> </br> <table border="2" bordercolor="#1298A3">
+<tr>
+<th> Options </th>
+<th> Description </th>
+<th> Examples </th>
+</tr>
+<tr>
+<td> -A</br> --almost-all </td>
+<td>  List all files including hidden.</br> Bu Do not list implied . and ..  </td>
+<td>  ls -A</br> ls -A /tmp</br> ls -A ~</br> ls -A *log* </td>
+</tr>
+<tr>
+<td> -l </td>
+<td>  Use a long listing format </td>
+<td>  ls -l</br> ls -l ~</br> ls -l /tmp </td>
+</tr>
+<tr>
+<td> -h</br> --human-readable </td>
+<td>  With -l</br> print sizes in human readable format</br> (e.g. 1K 234M 2G) </td>
+<td>  ls -lh</br> ls -lh /tmp</br> ls -lh /tmp/JavaDeployReg.log /tmp/MBHANSAL-7420-20220324-2250.log /tmp/MBHANSAL-7420-20220327-1327.log /tmp/MBHANSAL-7420-20220328-1751.log /tmp/MBHANSAL-7420-20220329-1740.log /tmp/MBHANSAL-7420-20220331-1156.log /tmp/MBHANSAL-7420-20220331-1351.log /tmp/MBHANSAL-7420-20220401-0842.log /tmp/MBHANSAL-7420-20220401-0954.log /tmp/MBHANSAL-7420-20220401-1330.log /tmp/MBHANSAL-7420-20220401-1619.log /tmp/MBHANSAL-7420-20220401-1627.log /tmp/MBHANSAL-7420-20220401-1727.log /tmp/MBHANSAL-7420-20220404-1159.log /tmp/MBHANSAL-7420-20220404-1202.log /tmp/MBHANSAL-7420-20220404-1408.log /tmp/MBHANSAL-7420-20220404-1452.log /tmp/MBHANSAL-7420-20220405-1252.log /tmp/MBHANSAL-7420-20220406-1407.log /tmp/MBHANSAL-7420-20220411-1157.log /tmp/MBHANSAL-7420-20220413-1553.log /tmp/MBHANSAL-7420-20220418-0923.log /tmp/MBHANSAL-7420-20220419-1009.log /tmp/MBHANSAL-7420-20220420-1306.log /tmp/MBHANSAL-7420-20220421-1357.log /tmp/MBHANSAL-7420-20220425-1120.log /tmp/MBHANSAL-7420-20220429-1545.log /tmp/MBHANSAL-7420-20220429-1641.log /tmp/MBHANSAL-7420-20220502-0937.log /tmp/MBHANSAL-7420-20220504-0902.log /tmp/Python 3.10.4 (64-bit)_20220324191742.log /tmp/Python 3.10.4 (64-bit)_20220324191742_000_core_JustForMe.log /tmp/Python 3.10.4 (64-bit)_20220324191742_001_exe_JustForMe.log /tmp/Python 3.10.4 (64-bit)_20220324191742_002_dev_JustForMe.log /tmp/Python 3.10.4 (64-bit)_20220324191742_003_lib_JustForMe.log /tmp/Python 3.10.4 (64-bit)_20220324191742_004_test_JustForMe.log /tmp/Python 3.10.4 (64-bit)_20220324191742_005_doc_JustForMe.log /tmp/Python 3.10.4 (64-bit)_20220324191742_006_tools_JustForMe.log /tmp/Python 3.10.4 (64-bit)_20220324191742_007_tcltk_JustForMe.log /tmp/Python 3.10.4 (64-bit)_20220324191742_008_launcher_AllUsers.log /tmp/Python 3.10.4 (64-bit)_20220324191742_009_pip_JustForMe.log /tmp/Python 3.10.4 (64-bit)_20220324191742_010_path_JustForMe.log /tmp/StructuredQuery.log /tmp/java_install_reg.log /tmp/jusched.log /tmp/vivaldi_installer.log /tmp/vscode-inno-updater-1648022591.log /tmp/vscode-inno-updater-1649337610.log /tmp/vscode-inno-updater-1649414977.log /tmp/vscode-inno-updater-1650608025.log </td>
+</tr>
+<tr>
+<td> -r</br> --reverse </td>
+<td>  Reverse order while sorting </td>
+<td>  ls -r</br> ls -lr /tmp </td>
+</tr>
+<tr>
+<td> -R</br> --recursive </td>
+<td>  List subdirectories recursively </td>
+<td>  ls -R</br> ls -alR $HOME</br> ls -Rh /tmp </td>
+</tr>
+<tr>
+<td> -t </td>
+<td>  Sort by modification time (newest first) </td>
+<td>  ls -lt</br> ls -ltr</br> ls -tr /tmp </td>
+</tr>
+<tr>
+<td> -1 </td>
+<td>  List one file per line </td>
+<td>  ls -1</br> ls -1 logs</br> ls -a1 $HOME </td>
+</tr>
+</table>
+<hr align="left" width="87%"></br>
+<table border="2" bordercolor="#1298A3">
+<tr>
+<th> Command </th>
+<th> Description </th>
+<th> Syntax </th>
+<th> Example </th>
+<th> Help </th>
+</tr>
+<tr>
+<td> <a href=https://www.tutorialspoint.com/unix_commands/mkdir.htm> mkdir </a> </td>
+<td>  Make Directories </td>
+<td>  mkdir [OPTION]... DIRECTORY...</br>  </td>
+<td>  mkdir MyWork </td>
+<td>  man mkdir </td>
+</tr>
+</table> </br> <table border="2" bordercolor="#1298A3">
+<tr>
+<th> Options </th>
+<th> Description </th>
+<th> Examples </th>
+</tr>
+<tr>
+<td> -p</br> --parents </td>
+<td>  No error if existing </td>
+<td>  make parent directories as needed </td>
+<td>  mkdir -p First/Second/Tritiya </td>
+</tr>
+</table>
+<hr align="left" width="87%"></br>
+<table border="2" bordercolor="#1298A3">
+<tr>
+<th> Command </th>
+<th> Description </th>
+<th> Syntax </th>
+<th> Example </th>
+<th> Help </th>
+</tr>
+<tr>
+<td> <a href=https://www.tutorialspoint.com/unix_commands/mv.htm> mv </a> </td>
+<td>  Move or Rename files.</br> Technically, If you move a file in same directory, But with different name, is Rename.</br> So Both are same thing, in that case. </td>
+<td>  mv [OPTION]... SOURCE... DIRECTORY </td>
+<td>  mv india.cpp Bharat.cpp</br> mv Bharat.cpp Countries </td>
+<td>  man mv </td>
+</tr>
+</table>
+<hr align="left" width="87%"></br>
+<table border="2" bordercolor="#1298A3">
+<tr>
+<th> Command </th>
+<th> Description </th>
+<th> Syntax </th>
+<th> Example </th>
+<th> Help </th>
+</tr>
+<tr>
+<td> <a href=https://www.tutorialspoint.com/unix_commands/scp.htm> scp </a> </td>
+<td>  Secure copy (Remote file copy program) </td>
+<td>  scp [-12346BCpqrv] [-c cipher] [-F ssh_config] [-i identity_file] [-l limit] [-o ssh_option] [-P port] [-S program] [[user@]host1:]file1 ... [[user@]host2:]file2 </td>
+<td>  scp -pr Learnings/ vagrant@localhost:/vagrant/Ubhaychar/Scripts/ </td>
+<td>  man scp </td>
+</tr>
+</table>
+<hr align="left" width="87%"></br>
+<table border="2" bordercolor="#1298A3">
+<tr>
+<th> Command </th>
+<th> Description </th>
+<th> Syntax </th>
+<th> Example </th>
+<th> Help </th>
+</tr>
+<tr>
+<td> <a href=https://www.tutorialspoint.com/unix_commands/tac.htm> tac </a> </td>
+<td>  Concatenate and print files in reverse</br> ( If you see command tac itself is reverse of cat ) </td>
+<td>  tac [OPTION]... [FILE]...  </td>
+<td>  tac $HOME/.bashrc </td>
+<td>  man tac </td>
+</tr>
+</table>
+<hr align="left" width="87%"></br>
+<pre> Good Bye :) </pre>
+<hr></body></html>

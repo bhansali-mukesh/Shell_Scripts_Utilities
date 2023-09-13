@@ -1,0 +1,5 @@
+#Command,#Description,#Syntax,#Example,#Help
+mkdir#linkhttps://www.tutorialspoint.com/unix_commands/mkdir.htm, Make Directories, mkdir [OPTION]... DIRECTORY...; , mkdir MyWork, man mkdir
+
+#Options,#Description,#Examples
+-p; --parents, No error if existing, make parent directories as needed, mkdir -p First/Second/Tritiya 

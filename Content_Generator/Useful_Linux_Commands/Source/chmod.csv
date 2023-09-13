@@ -1,0 +1,7 @@
+#Command,#Description,#Syntax,#Example,#Help
+chmod#linkhttps://www.tutorialspoint.com/unix_commands/chmod.htm, Change file Permissions; i. e. Read(4))^( Write(2))^( Execute(1); For User Group and Other; It is Either; An English Letter Or Octal Number; For Specific Permission; , chmod [OPTION]... MODE[^MODE]... FILE... ; chmod [OPTION]... OCTAL-MODE FILE... ; chmod [OPTION]... --reference=RFILE FILE... , chmod 777 public.txt; chmod +x myscript.sh, man chmod
+
+Options,#Description,#Examples
+-R; --recursive, Change Permission for files and directories recursively, chmod +x -R Scripts/ ; chmod 744 -R logs
+
+

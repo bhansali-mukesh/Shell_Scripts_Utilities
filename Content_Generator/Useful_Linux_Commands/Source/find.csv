@@ -1,0 +1,5 @@
+#Command,#Description,#Syntax,#Example,#Help
+find#linkhttps://www.tutorialspoint.com/unix_commands/find.htm, Search for files in a directory hierarchy, find [-H] [-L] [-P] [-D debugopts] [-Olevel] [path...] [expression], find /tmp -name names.txt, man find
+
+#Options,#Description,#Examples
+-name, Finds all files matching following pattern in their name, find /tmp/logs -name server_*log 

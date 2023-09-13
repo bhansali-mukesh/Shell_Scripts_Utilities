@@ -1,0 +1,6 @@
+#Command,#Description,#Syntax,#Example,#Help
+echo#linkhttps://www.tutorialspoint.com/unix_commands/echo.htm, Displays text, echo [SHORT-OPTION]... [STRING]...; echo LONG-OPTION, echo GNU means "Gnu is Not Unix", man echo
+
+#Options,#Description,#Examples
+-n, Do not output the trailing newline, echo a; echo b; output :; a; b; echo -n a; echo b; output : ab
+-e, Enable interpretation of backslash escapes sequence, echo "Name \\t Bhansali"; output :; Name \t Bhansali; echo -e "Name \t Bhansali; output :; Name		Bhansali; (\t is Tab)"

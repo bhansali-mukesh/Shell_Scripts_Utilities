@@ -1,0 +1,2 @@
+#Command,#Description,#Syntax,#Example,#Help
+tac#linkhttps://www.tutorialspoint.com/unix_commands/tac.htm, Concatenate and print files in reverse; ( If you see command tac itself is reverse of cat ), tac [OPTION]... [FILE]... , tac $HOME/.bashrc, man tac

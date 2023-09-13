@@ -1,0 +1,2 @@
+#Command,#Description,#Syntax,#Example,#Help
+mv#linkhttps://www.tutorialspoint.com/unix_commands/mv.htm, Move or Rename files.; Technically)^( If you move a file in same directory)^( But with different name)^( is Rename.; So Both are same thing)^( in that case., mv [OPTION]... SOURCE... DIRECTORY, mv india.cpp Bharat.cpp; mv Bharat.cpp Countries, man mv 

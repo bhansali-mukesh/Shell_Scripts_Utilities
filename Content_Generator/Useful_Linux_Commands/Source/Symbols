@@ -1,0 +1,6 @@
+#Symbol,#Description,#Example
+[], Optional, ls [OPTION]
+... , Multiple, ls [OPTION]...
+> , Re Direct output to write/over-write a file instead of dispalying on Console. , echo Kamlesh Vimlesh Mukesh > names.txt
+>> , Re Direct output to append a file instead of dispalying on Console. , echo Meena Heena Teena > names.txt
+| , Provide Output of left Command as input of Right Command , cat names.csv | grep Sneha

@@ -41,6 +41,20 @@ Dharta :
 #		Please don't use echo for other Purposes like Debugging etc.
 #		OR Use echo >&2 instead
 
+# As Above Dharta Works Just for 1 Input File,
+# Sanskaran, Calls Dharta Multiple Times for Each Input Files in a Directory
+#
+#       Example :
+#                       ./Sarv_Dharta.sh ~/Inputs/ ../Data/Example.sh
+#
+# Paramters
+#       1. Input Directory
+#               Input Directory Path ( Mandatory )
+#               This Script will Pass Each File to Dharta.sh for Further Processing of Input Files from Given Directory, Excluding Directories in it, Processing Just Files
+#       2. Shell Script
+#               A Shell Script to Process Each Line of Input Files
+#
+
 Sevak : 
 # Just type "Sevak" on Terminal
 # If Sevak is Followed By Some Special Command then it will Show Help for that Command

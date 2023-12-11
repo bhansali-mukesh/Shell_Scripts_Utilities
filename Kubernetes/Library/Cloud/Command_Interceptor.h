@@ -2,13 +2,16 @@
 
 # Author : BHANSALI MUKESH KUMAR
 
-# Set Alias "oci" to Point to oci.sh instead of Directly Executing Command
+# http://shukriya-janaab.blogspot.com/
+# https://github.com/bhansali-mukesh/
+
+# Set Alias "cli" to Point to cli.sh instead of Directly Executing Command
 # Example
-#               oci session refresh
+#               cli refresh session
 # Kind of Command Interceptor
-# It Extract Realm and Region From Given Command
+# It Extract Country & Location From Given Command
 # Adds them in Command Line and Execute
-# Update Kubernetes Configuration Files to Update Realm and Region, If Needed
+# Update Kubernetes Configuration Files to Update Country & Location, If Needed
 
 # Current Script Path
 MY_PATH=`dirname ${(%):-%N}`
@@ -19,64 +22,49 @@ MY_PATH=`dirname ${(%):-%N}`
 # Import Update Utility for Kubernetes Configuration Files
 . ${MY_PATH}/../Kubernetes/UpdateKubeConfig.h
 
-# Import Text Format Utility
-. ${MY_PATH}/../../../Shared/Library/Text/Format.h
-
 # THINGS IT DO
-# 1. Add "profile" & "auth" Parameters Before Running Command, If Needed
-# 2. Edit Generated KubeConfig to Add "profile" & "auth" Parameters
+# 1. Add "profile" & "location" Parameters Before Running Command, If Needed
+# 2. Edit Generated KubeConfig to Add "profile" & "location" Parameters
 
 
 function Intercept()
 {
 	# Run with More Parameters Like
-        # profile
-        # --auth
+        # --profile
+        # --location
         
-	# This Logic is Anyway Needed for Getting Region and Realm for Authentication
+	# Loop Through All Parameters
 	for parameter in $(echo $* | tr " " "\n")
         do
-		Realm=`echo $parameter | grep -Eo "oc[0-9]+" | head -1`
-		if [ ! -z "$Realm" ]
+        	RESOURCE=`echo $parameter | grep resource`
+        	if [ ! -z "$RESOURCE" ]
                 then
-                	Region=`echo $parameter | cut -d. -f4`
+			# Example
+			# resource.opensearchcluster.apac.bharat.pune.amaaaaaawtpq47yady45methtrh2yzwonu5ngqgsg7f54zxija
+			
+			# We already know Location is 4th Column, If we separate By Dot
+			COUNTRY=`echo $parameter | cut -d'.' -f4`
+			
+			# We already know Location is 5th Column, If we separate By Dot
+                	LOCATION=`echo $parameter | cut -d'.' -f5`
                         break;
                 fi
         done
-
-	if [ -z "$Realm" ]
-	then
-		if [ ! -z "$REALM" ]
-		then
-			Realm=$REALM
-		elif [ ! -z "$PROFILE" ]
-		then
-			Realm=$PROFILE
-		else
-			fatal
-			fatal "Realm is not Set"
-			fatal "Please do following."
-			warn "export REALM=<DESIRED_REALM>"
-			fatal
-				exit 1
-		fi
-	fi
-
-	# Authenticate Cloud Session to Connect Cloud Clusters
-	Authenticate_Session ${Realm} ${Region}
 	
-	# If Profile is Empty, Add profile & auth Parameters
+	# Authenticate Cloud Session to Connect Cloud Clusters
+        Authenticate_Session ${COUNTRY} ${LOCATION}
+	
+	# If Profile is Empty, Add profile & location Parameters
 	if [[ -z "${PROFILE}" ]]
 	then
-		# Debug "\oci ${*} --profile $Realm --auth security_token"
-		\oci ${*} --profile $Realm --auth security_token;
+		\cli ${*} --profile $COUNTRY --location $LOCATION;
 	else
 		# No Need to Add Anything, Just Run Command as Same as Provided
-		\oci ${*}
+		\cli ${*}
 	fi
 
 	# Adding Parameters in Generated KubeConfig for
 	# --profile
-        # --auth
-	UpdateKubeConfig $Realm
+        # --location
+	UpdateKubeConfig $COUNTRY
 }

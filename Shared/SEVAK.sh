@@ -2,9 +2,6 @@
 
 # Author : BHANSALI MUKESH KUMAR
 
-# http://shukriya-janaab.blogspot.com/
-# https://github.com/bhansali-mukesh/
-
 SEVAK_PATH=${(%):-%N}
 export SHARED=`dirname ${SEVAK_PATH}`
 
@@ -22,17 +19,18 @@ alias Sevakam="vi $SHARED/SEVAK.sh"
 # The Output File Name Can be Seen on Console Output ( Usually Latest in ../Data/Dharta*.csv ) 
 #
 #       Example :
-#                       ./Dharta.sh ../Data/Example_Input_IP_OS_Version.csv 'OS=`echo $line | cut -d"," -f2`; echo $OS'
-#			./Dharta.sh ../Data/Example_Input_IP_OS_Version.csv "`cat ../Data/Example_Processing_for_IP_OS_Version.sh`" 
+#                       ./Dharta.sh ../Data/Clusters_With_Image.csv 'cluster_id=`echo $line | cut -d" " -f2`; result=`$KUBER/Scripts/Karta.sh -c $cluster_id -x ls -o true`; echo $result'
+#			./Dharta.sh ../Data/Clusters_With_Old_Image.csv "`cat ../Data/Example.sh`" 
 #
 # Paramters
 #       1. File Path
 #		Input File Path ( Mandatory )
 #		This Script will Process Each Line of That
 #
-#	2. Command(s)
+#	2. Command(s) OR cat Script
 #		Single Command or List of Commands ( Preferred In Single Quotes ), Separated By Semicolon
 #		Which Needs to be Executed on Pod
+#		
 #		We can also Write these Commands in Script and cat that as Parameters
 #		As Shown in Example
 #
@@ -41,10 +39,24 @@ alias Sevakam="vi $SHARED/SEVAK.sh"
 #		The Script will Replace it will Actual Values from Input File in Runtime and Process
 #
 # 	Note :
-#		"echo" will be Considered as Output of Script/Command and Stored in Output File.
+#		echo will be Considered as Output of Script/Command and Stored in Output File.
 #		Please don't use echo for other Purposes like Debugging etc.
-#		OR Use "echo >&2 instead"
+#		OR Use echo >&2 instead
 alias Dharta='$SHARED/Scripts/Dharta.sh'
+
+# Calls Dharta Multiple Times for Each Input Files in a Directory
+#
+#       Example :
+#                       ./Sarv_Dharta.sh ~/Inputs/ ../Data/Example.sh
+#
+# Paramters
+#       1. Input Directory
+#               Input Directory Path ( Mandatory )
+#               This Script will Pass Each File to Dharta.sh for Further Processing of Input Files from Given Directory, Excluding Directories in it, Processing Just Files
+#	2. Shell Script
+#		A Shell Script to Process Each Line of Input Files
+#
+alias Sanskaran='$SHARED/Scripts/Sarv_Dharta.sh'
 
 # Just type "Sevak" on Terminal
 # If Sevak is Followed By Some Special Command then it will Show Help for that Command

@@ -43,12 +43,27 @@ alias cli=$KUBER/Scripts/Cloud_Command_Interceptor.sh
 
 # Authenticate the Cloud Session
 # Example
-#		Auth
-# 
+#               Auth
+#
 # Creates Cloud Session, If Needed
 # Refreshes Session to Set Later Expiry, If Session is Already Valid
-# ( Cloud Session is Valid for 2 Hours, If not Refershed )
-alias Auth='$KUBER/Scripts/Cloud_Authenticator.sh'
+# ( Cloud Session is Valid for one Hour, If not Refershed )
+alias Auth='. $KUBER/Library/Cloud/Session_Manager.h && Authenticate_Session ${1} ${2}'
+
+# Terminates the Cloud Session
+# Example
+#               Un_Auth
+# 
+alias Un_Auth='. $KUBER/Library/Cloud/Session_Manager.h && Terminate_Session'
+
+# Re-Authenticate the Cloud Session
+#       1. Terminates the Existing Session
+#       2. Authenticate Again
+# Example
+#               Re_Auth
+#
+# Re-Creates Cloud Session
+alias Re_Auth='. $KUBER/Library/Cloud/Session_Manager.h && Restart_Session'
 
 # Get Kubenetes Result from Pods
 # Example

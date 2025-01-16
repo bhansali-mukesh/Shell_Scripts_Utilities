@@ -29,7 +29,7 @@ Kuberam :
 Cloud : 
 # Get Kubenetes Result from Pods
 #	Example :
-#			Cloud -c ocid1.opensearchcluster.oc1.iad.amaaaaaawtpq47yadjphtgbx6dhy45mg5mjkk2yzwonu5ngqgsg7f54zxija -p MP
+#			Cloud -c id.opensearchcluster.oc1.iad.amaaaaaawtpq47yadjphtgbx6dhy45mg5mjkk2yzwonu5ngqgsg7f54zxija -p MP
 #			Cloud -f health
 # Paramters
 #       1. -c Cluster Id ( Optional ),
@@ -46,15 +46,6 @@ Cloud :
 # It Enquires Relevant Pod for the Given Command & Shows you Relevant Results
 # In Case, You Don't Provide Anything and Just Press Enter, It will take you to Pod Terminal
 
-oci : 
-# Set Alias "oci" to Point to oci.sh instead of Directly Executing Command
-# Example
-#		oci session refresh
-# Kind of Command Interceptor
-# It Extract Realm and Region From Given Command
-# Adds them in Command Line and Execute
-# Update Kubernetes Configuration Files to Update Realm and Region, If Needed
-
 Auth : 
 # Authenticate the Cloud Session
 # Example
@@ -67,7 +58,7 @@ Auth :
 Connect : 
 # Get Kubenetes Result from Pods
 # Example
-# 		Connect ~/.kube/DEV_MUMBAI_DP ocid1.opensearchcluster.oc1.ap-mumbai-1.amaaaaaayzvoveqalnyullf4e3zj7wo4ewqhtv5i6jzuheczyeuyrxurjsaq DP "ls -l; df -h; free -m"
+# 		Connect ~/.kube/DEV_MUMBAI_DP id.opensearchcluster.oc1.ap-mumbai-1.amaaaaaayzvoveqalnyullf4e3zj7wo4ewqhtv5i6jzuheczyeuyrxurjsaq DP "ls -l; df -h; free -m"
 #
 # Paramters
 # 	1. Kube Config File Path ( Mandatory ), Error Otherwise
@@ -82,7 +73,7 @@ Collector :
 # Get Cluster Data
 # Example
 #		export ES_ADMIN_PASSWORD=guHW2fI6cVdrAbQAz9zrwMFgvASqLUMxFHa4ADe395K6Wrhoreiok50XkBSMXP9z2 ( If Authentication is Needed )
-#		Collector ocid1.opensearchcluster.oc1.phx.amaaaaaahngrfpyaelhcoujdnntg7ldmx2p7cs4bve6yxejkzkgasrjwr6ia
+#		Collector id.opensearchcluster.oc1.phx.amaaaaaahngrfpyaelhcoujdnntg7ldmx2p7cs4bve6yxejkzkgasrjwr6ia
 #
 # Parameters
 #	1. Cluster ID ( Mandatory )
@@ -91,7 +82,7 @@ Collector :
 Find : 
 # Find Kubernetes Configuration File for Given Cluster CloudD
 # Example
-#	Find ocid1.opensearchcluster.oc1.ap-mumbai-1.amaaaaaayzvoveqalnyullf4e3zj7wo4ewqhtv5i6jzuheczyeuyrxurjsaq DP
+#	Find id.opensearchcluster.oc1.ap-mumbai-1.amaaaaaayzvoveqalnyullf4e3zj7wo4ewqhtv5i6jzuheczyeuyrxurjsaq DP
 #
 # Paramters
 # 	1. Cluster Id ( Mandatory ), Error Otherwise
@@ -102,7 +93,7 @@ Find :
 Commandor : 
 # List Available Commands to Choose from
 # Example
-#               Commandor -c ocid1.opensearchcluster.oc1.eu-frankfurt-1.amaaaaaaejac4waaj2grsrt7jcodbmssobwvw2afqldtisn6mso7eodclfda -r ~/Productivity_Scripts/Resources/Example.properties -p MP -s Deleting
+#               Commandor -c id.opensearchcluster.oc1.eu-frankfurt-1.amaaaaaaejac4waaj2grsrt7jcodbmssobwvw2afqldtisn6mso7eodclfda -r ~/Productivity_Scripts/Resources/Example.properties -p MP -s Deleting
 #               Commandor -f index
 #
 # Paramters
